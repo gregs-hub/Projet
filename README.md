@@ -14,7 +14,7 @@ This project aims at creating a voting smart contract for a small organization. 
 - During this phase, voters can each register zero to several proposals, submited to vote.
 - The administrator ends the proposal registration phase.
 - The administrator starts the voting phase.
-- During this phase, voters can each vote on their favorite proposals.
+- During this phase, voters can each vote on their unique favorite proposal.
 - The administrator ends the voting phase.
 - The administrator tallies votes.
 - The administrator reveals the winning proposal.
