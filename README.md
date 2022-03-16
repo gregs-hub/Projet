@@ -1,12 +1,12 @@
 # alyra-projet01-voting
 
 **⚡️ Projet 01 - Voting system** <br />
-This project aims at creating a voting smart contract for a small organization. The voters, all known by the organization, are registered by the administrator on a whitelist thanks to there Ethereum wallet address. Voters can submit proposals to vote during the proposal registration phase. Voters can vote on propositions during the Voting Session.
+This project aims at creating a voting smart contract for a small organization. The voters, all known by the organization, are registered by the administrator on a whitelist with their wallet address. Voters can submit proposals to the vote during the Proposal Registration phase. Voters can vote on propositions during the Voting Session.
 
-👉 Provided details:
+👉 Details:
 - Votes are public
-- Each voter can see others votes
-- Winner proposal is the one with majority of votes
+- Each voter can see each others votes
+- Winning proposal is the one with the majority of votes
     
 👉 Full administrative process :
 - The administrator register authorized voters' address on a whitelist during the first step.
