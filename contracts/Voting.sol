@@ -146,7 +146,7 @@ contract Voting is Ownable {
         emit WorkflowStatusChange(WorkflowStatus.VotingSessionEnded, status);
     }
 
-    // Owner publishes the final winner proposal, or an error if no majority. Current status must be VotesTallied
+    // Owner publishes the final winning proposal, or an error if no majority. Current status must be VotesTallied
     function getWinner() external view withStatus(5) returns(uint winningProposalId, string memory) {
         require(maxVotesId.length == 1, "No majority found");
         winningProposalId = maxVotesId[0];
