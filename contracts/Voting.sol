@@ -148,7 +148,7 @@ contract Voting is Ownable {
 
     // Owner publishes the final winning proposal, or an error if no majority. Current status must be VotesTallied
     function getWinner() external view withStatus(5) returns(uint winningProposalId, string memory) {
-        require(maxVotesId.length == 1, "No majority found");
+        require(maxVotesId.length == 1, "No majority found, new vote will be created with the tied proposals");
         winningProposalId = maxVotesId[0];
         return (winningProposalId, proposals[winningProposalId].description);
     }
