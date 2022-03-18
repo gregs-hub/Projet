@@ -4,7 +4,7 @@ pragma solidity ^0.8.12;
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
 
-/**
+/*
  * @title Voting contract for a small organization
  * @author Grégory Seiller
  */
