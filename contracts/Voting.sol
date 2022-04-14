@@ -130,6 +130,7 @@ contract Voting is Ownable {
     /// @param _description Proposal description
     function addProposal(string memory _description) external isWhitelisted withStatus(1) {
         require(bytes(_description).length > 0, "Cannot accept an empty proposal description");
+        require(proposals.length < 100, 'Cannot accept more than 100 proposals');
         Proposal memory proposal;
         proposal.description = _description;
         proposals.push(proposal);
@@ -173,7 +174,7 @@ contract Voting is Ownable {
     /// @dev Owner tallies the final votes. Current status must be VotingSessionEnded. Maximum 100 proposals (DoS). Emits WorkflowStatusChange
     function tallyVotes() external onlyOwner withStatus(4) {
         uint _winningProposalId;
-        for (uint256 p = 0; p < 100; p++) {
+        for (uint256 p = 0; p < proposals.length; p++) {
             if (proposals[p].voteCount > proposals[_winningProposalId].voteCount) {
                 _winningProposalId = p;
             }
