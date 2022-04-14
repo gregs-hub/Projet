@@ -1,0 +1,24 @@
+{
+  "name": "alyra-projet01-voting",
+  "version": "1.1.0",
+  "description": "**⚡️ Projet 01 - Voting system** <br />\r This project aims at creating a voting smart contract for a small organization. The voters, all known by the organization, are registered by the administrator on a whitelist with their wallet address. Voters can submit proposals to the vote during the Proposal Registration phase. Voters can vote on propositions during the Voting Session.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregs-hub/alyra-projet01-voting.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregs-hub/alyra-projet01-voting/issues"
+  },
+  "homepage": "https://github.com/gregs-hub/alyra-projet01-voting#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0"
+  },
+  "devDependencies": {}
+}
